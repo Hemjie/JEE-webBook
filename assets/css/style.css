@@ -13,58 +13,43 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
     height: 100vh;
 }
 
-.header {
+header {
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
 }
 
-.logo, .title {
-    font-family: 'Ballpark', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 15px 0;    
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.title, nav a, nav a #person {    
+    font-size: 45px;
     color: var(--dark_brown);
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 40px;
+    text-decoration: none;
 }
 
 .menu {
-    font-family: 'Trebuchet MS';
-    text-transform: uppercase;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.logo, .title, .menu {
-    float: left;
-    width: 500px;
-    
-}
-
-.clear {
-    clear: both;
-}
-
-ul {
-    margin: 0;
-    padding-top: 0;
-}
-
-nav li {
-    display: inline;
-    padding-left: 0;
-}
-
-nav li a, 
-nav li a #person {
-    text-decoration: none;    
-    color: var(--dark_brown);
-    display: inline-block;
-    padding: 15px 10px;
-}
-
-.menu ul li a:hover {
+.menu a:hover {
     transition: 1s;
     text-decoration: underline;
     text-decoration-color: var(--light_brown);
