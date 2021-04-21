@@ -17,7 +17,6 @@ body {
 }
 
 header {
-    height: 100px;
     display: flex;
     justify-content: space-between;
     padding: 10px 50px;
@@ -54,4 +53,10 @@ header {
     text-decoration: underline;
     text-decoration-color: var(--light_brown);
     text-decoration-thickness: 3px;
+}
+
+.img-back img {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
 }
