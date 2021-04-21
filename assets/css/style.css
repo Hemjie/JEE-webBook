@@ -33,7 +33,7 @@ header {
     height: auto;
 }
 
-.title, nav a, nav a #person {    
+.title, nav a, nav a #person, .recent-books .title-recent {    
     font-size: 45px;
     color: var(--dark_brown);
     padding-top: 15px;
@@ -59,4 +59,36 @@ header {
     width: 100%;
     height: auto;
     margin-top: 0px;
+}
+
+.recent-books .title-recent {
+    text-align: center;
+    padding-right: 0px;
+    margin-bottom: 30px;
+}
+
+.line-recent {
+    border-top: 4px solid var(--light_brown);
+    width: 640px;
+    margin: auto;
+}
+
+.list-recent {
+    padding: 50px 175px;
+}
+
+.list-recent .book-recent {
+    width: 300px;
+}
+
+.list-recent img {
+    width: 300px;
+}
+
+.list-recent .title-book-recent {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--dark_brown);
+    
 }
