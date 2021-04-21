@@ -75,14 +75,21 @@ header {
 
 .list-recent {
     padding: 50px 175px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
 }
 
 .list-recent .book-recent {
     width: 300px;
+    margin-bottom: 50px;
 }
 
 .list-recent img {
     width: 300px;
+    height: 450px;
+    box-shadow: 0px 8px 35px rgb(75, 75, 75);
 }
 
 .list-recent .title-book-recent {
