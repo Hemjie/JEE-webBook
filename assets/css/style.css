@@ -144,3 +144,16 @@ header {
     text-decoration: underline;
     text-decoration-thickness: 1px;
 }
+
+.modal {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    max-height: 798px;
+}
+
+#modal-sign-in, #modal-sign-up {
+    display: none;
+}
+
+
