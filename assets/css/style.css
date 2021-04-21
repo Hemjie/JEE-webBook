@@ -100,6 +100,17 @@ header {
     color: var(--dark_brown);    
 }
 
+.modal {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    max-height: 798px;
+}
+
+#modal-sign-in, #modal-sign-up {
+    display: none;
+}
+
 .one-book {
     margin: 10px 100px;
     font-family: Arial, Helvetica, sans-serif;
@@ -145,15 +156,50 @@ header {
     text-decoration-thickness: 1px;
 }
 
-.modal {
-    position: relative;
-    background-color: white;
-    border-radius: 5px;
-    max-height: 798px;
+.contact {
+    margin: 100px 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark_brown);
+    font-size: 30px;    
 }
 
-#modal-sign-in, #modal-sign-up {
-    display: none;
+.contact label {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
+
+.contact input, .contact textarea {
+    border-radius: 10px;
+    width: 95%;
+    height: 50px;
+}
+
+.contact input {
+    border-width: 1px;
+}
+.contact textarea {
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.contact label {
+    display: block;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.contact a {
+    display: block;
+    background-color: var(--dark_brown);
+    border-radius: 10px;
+    color: var(--beige);
+    font-size: 40px;
+    border-width: 1px var(--light_brown);
+    text-decoration: none;
+    width: 35%;
+    text-align: center;
+    padding: 20px;
+}
+
 
 
