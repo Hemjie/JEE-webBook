@@ -33,7 +33,8 @@ header {
     height: auto;
 }
 
-.title, nav a, nav a #person, .recent-books .title-recent {    
+.title, nav a, nav a #person, .recent-books .title-recent, 
+.title-one-book {    
     font-size: 45px;
     color: var(--dark_brown);
     padding-top: 15px;
@@ -67,7 +68,7 @@ header {
     margin-bottom: 30px;
 }
 
-.line-recent {
+.line-recent, .line-one-book {
     border-top: 4px solid var(--light_brown);
     width: 640px;
     margin: auto;
@@ -96,6 +97,50 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: lighter;
+    color: var(--dark_brown);    
+}
+
+.one-book {
+    margin: 10px 100px;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--dark_brown);
-    
+    font-size: 24px;
+}
+
+.title-one-book {
+    font-size: 35px;
+    margin-bottom: 8px;
+    margin-top: 25px;
+}
+
+.line-one-book {
+    margin: 0px;
+    margin-bottom: 25px;
+    width: 500px;
+}
+
+.details-one-book {
+    display: flex;
+
+}
+
+.details-one-book img {
+    width: 350px;
+    margin-right: 130px;
+}
+
+.infos-one-book {  
+    width: 1000px;
+    margin-top: 15px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.info-name {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
