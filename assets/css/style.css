@@ -98,10 +98,58 @@ header {
 }
 
 .modal {
-    position: relative;
-    background-color: white;
+    position: fixed;    
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.4);
+	text-align: center;
+	/*visibility: hidden; */
+	/*opacity: 0; */
+	/* pointer-events: none; */
+	transition: all 300ms;	
     border-radius: 5px;
+}
+
+.container div.modal > div {
+	width: 50%;
     max-height: 798px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;	
+	padding: 15px;
+}
+
+#modal-search input {
+    width: 86%;
+    border-radius: 10px;
+    height: 50px;
+    border-width: 1px;
+    color: var(--brown);
+}
+
+#modal-search .search-list {
+    display: flex;
+    margin: 20px 50px;
+    color: var(--brown);
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    line-height: 15px;
+}
+
+#modal-search .search-list div {
+    margin-left: 50px;
+}
+
+
+#modal-search .search-list img {
+    width: 85px;
+    height: 120px;
 }
 
 #modal-sign-in, #modal-sign-up {
