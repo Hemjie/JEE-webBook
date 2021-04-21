@@ -4,3 +4,69 @@
     --light_brown: #a96851;
     --beige: #f2f1e7 ;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    height: 100px;
+}
+
+.logo, .title {
+    font-family: 'Ballpark', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px 0;    
+    color: var(--dark_brown);
+}
+
+.menu {
+    font-family: 'Trebuchet MS';
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.logo, .title, .menu {
+    float: left;
+    width: 500px;
+    
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding-top: 0;
+}
+
+nav li {
+    display: inline;
+    padding-left: 0;
+}
+
+nav li a, 
+nav li a #person {
+    text-decoration: none;    
+    color: var(--dark_brown);
+    display: inline-block;
+    padding: 15px 10px;
+}
+
+.menu ul li a:hover {
+    transition: 1s;
+    text-decoration: underline;
+    text-decoration-color: var(--light_brown);
+    text-decoration-thickness: 3px;
+}
