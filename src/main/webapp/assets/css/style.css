@@ -225,7 +225,7 @@ header {
     margin-bottom: 35px;
 }
 
-#modal-search, #modal-sign-in {
+#modal-search, #modal-sign-in, #modal-sign-up {
     display: none;
 }
 
