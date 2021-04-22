@@ -6,8 +6,10 @@
     <p class="title-recent">Recent books</p>
     <div class="line-recent"></div>
     <div class="list-recent">
-        <div class="book-recent">                    
-            <img src="${ pageContext.request.contextPath }/assets/img/L-enfant-parfaite.jpg">
+        <div class="book-recent">   
+        	<a href="${ pageContext.request.contextPath }/one_book">        		
+            	<img src="${ pageContext.request.contextPath }/assets/img/L-enfant-parfaite.jpg">
+        	</a>                 
             <h2 class="title-book-recent">L'enfant parfaite</h2>
         </div>
         <div class="book-recent">                    
