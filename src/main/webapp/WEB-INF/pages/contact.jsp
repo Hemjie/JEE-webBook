@@ -6,6 +6,6 @@
         <input type="email" />
         <label>Message</label>
         <textarea></textarea>
-        <a href="#">Send Email</a>
+        <a href="${ pageContext.request.contextPath }/">Send Email</a>
     </form>
 </div>

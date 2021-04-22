@@ -45,7 +45,7 @@
           		<img src="${ pageContext.request.contextPath }/assets/img/Fables-Livres-VII-a-XI-oeuvre-au-programme.jpg">
             	<div>
 	                <p class="search-title">
-	                    Fables de La Fontaine, Livres VII Ã  XI (Bac 2021)
+	                    Fables de La Fontaine, Livres VII à XI (Bac 2021)
 	                </p>
 	                <p class="search-editor">Hatier</p>
 	                <p class="search-date">28/08/2019</p>
@@ -69,7 +69,7 @@
             <img src="${ pageContext.request.contextPath }/assets/img/A-la-claire-fontaine.jpg">
             <div>
                 <p class="search-title">
-                    Fables (livres VII Ã  XI) - Nouvelle
+                    Fables (livres VII à XI) - Nouvelle
                 </p>
                 <p class="search-editor">Belin Education</p>
                 <p class="search-date">15/06/2020</p>
@@ -81,7 +81,7 @@
             <img src="${ pageContext.request.contextPath }/assets/img/Fables-Livres-VII-a-XI-oeuvre-au-programme.jpg">
             <div>
                 <p class="search-title">
-                    Les Fables, Livres VII Ã  XI 
+                    Les Fables, Livres VII à XI 
                 </p>
                 <p class="search-editor">Nathan</p>
                 <p class="search-date">02/01/2020</p>
@@ -93,7 +93,7 @@
             <img src="${ pageContext.request.contextPath }/assets/img/A-la-claire-fontaine.jpg">
             <div>
                 <p class="search-title">
-                    Agatha Raisin - MÃ©fiez-vous de l'eau qui dort! ...
+                    Agatha Raisin - Méfiez-vous de l'eau qui dort! ...
                 </p>
                 <p class="search-editor">Albin Michel</p>
                 <p class="search-date">28/08/2019</p>
@@ -105,7 +105,7 @@
             <img src="${ pageContext.request.contextPath }/assets/img/Fables-Livres-VII-a-XI-oeuvre-au-programme.jpg">
             <div>
                 <p class="search-title">
-                    Fables de La Fontaine, Livres VII Ã  XI (Bac 2021)
+                    Fables de La Fontaine, Livres VII à XI (Bac 2021)
                 </p>
                 <p class="search-editor">Hatier</p>
                 <p class="search-date">28/08/2019</p>
@@ -123,8 +123,8 @@
             <label>Password</label>
             <input type="password" />
         </form>
-        <p>Sign out</p>
-        <a href="#">Sign in</a>
+        <a href="${ pageContext.request.contextPath }/"><p>Sign out</p></a>
+        <a class="btn-sign" href="${ pageContext.request.contextPath }/">Sign in</a>
     </div>
 </div>
 
@@ -140,7 +140,7 @@
             <label>Password</label>
             <input type="password" />
         </form>
-        <p>Sign in</p>
-        <a href="#">Sign up</a>
+        <a href="#modal-sign-in"><p>Sign in</p></a>
+        <a class="btn-sign" href="${ pageContext.request.contextPath }/">Sign up</a>
     </div>
 </div>

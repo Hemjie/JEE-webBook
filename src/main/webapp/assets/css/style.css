@@ -34,7 +34,7 @@ header {
     height: auto;
 }
 
-.title, nav a, nav a #person, .recent-books .title-recent, 
+.title, .title a, nav a, nav a #person, .recent-books .title-recent, 
 .title-one-book {    
     font-size: 45px;
     color: var(--dark_brown);
@@ -202,17 +202,14 @@ header {
     font-size: 30px; 
 }
 
-#modal-sign-in p,
-#modal-sign-up p {
-    font-size: 18px;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;  
-    margin-top: 20px;  
-    margin-bottom: 50px;
-}
-
 #modal-sign-in a,
 #modal-sign-up a {
+	text-decoration: none;	
+    color: var(--dark-brown);
+}
+
+#modal-sign-in .btn-sign,
+#modal-sign-up .btn-sign {
     background-color: var(--dark_brown);
     border-radius: 10px;
     color: var(--beige);
@@ -222,6 +219,15 @@ header {
     width: 35%;
     text-align: center;
     padding: 12px 175px;
+}
+
+#modal-sign-in p,
+#modal-sign-up p {
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;  
+    margin-top: 20px;  
+    margin-bottom: 50px;
 }
 
 .container div#modal-sign-up > div {

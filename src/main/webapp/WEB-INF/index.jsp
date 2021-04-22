@@ -15,15 +15,19 @@
         <header>
             <div class="header-left">                
                 <div class="logo">
-                    <img src="${ pageContext.request.contextPath }/assets/icon/book_icon.svg"/>
+                    <a href="${ pageContext.request.contextPath }/">
+                    	<img src="${ pageContext.request.contextPath }/assets/icon/book_icon.svg"/>
+                    </a>
                 </div>
-                <div class="title">WebBooks</div>
+                <div class="title">
+                	<a href="${ pageContext.request.contextPath }/">WebBooks</a>
+                </div>
             </div>
             <nav class="menu">
                 <a href="${ pageContext.request.contextPath }/">Home</a>
                 <a href="${ pageContext.request.contextPath }/contact">Contact</a>
                 <a href="#modal-search">Search</a>
-                <a id="person" href="#"><img src="${ pageContext.request.contextPath }/assets/icon/person_black_48dp.svg"></a>
+                <a id="person" href="#modal-sign-up"><img src="${ pageContext.request.contextPath }/assets/icon/person_black_48dp.svg"></a>
             </nav>
         </header>
         

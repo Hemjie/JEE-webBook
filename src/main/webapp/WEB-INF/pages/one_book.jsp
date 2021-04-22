@@ -40,15 +40,15 @@
         <p class="title-one-book">Synopsis</p>
         <div class="line-one-book"></div>
         <p>
-            New York, dans les annÃ©es 1900. Une jeune fille, que passionnent les livres rares, se joue du destin et gravit tous les Ã©chelons.
-            Elle devient la directrice de la fabuleuse bibliothÃ¨que du magnat J.P. Morgan et la coqueluche de l'aristocratie internationale,
-            sous le faux nom de Belle da Costa Greene. Belle Greene pour les intimes. En vÃ©ritÃ©, elle triche surtout. Car la flamboyante 
-            collectionneuse qui fait tourner les tÃªtes et rÃ¨gne sur le monde des bibliophiles cache un terrible secret,dans une AmÃ©rique 
-            violemment raciste. Bienqu'elle paraisse blanche, elle est en rÃ©alitÃ© afro-amÃ©ricaine. Et, de surcroÃ®t, fille d'un cÃ©lÃ¨bre 
-            activiste noir qui voit sa volontÃ© de cacher ses origines comme une trahison. C'est ce drame d'un Ãªtre Ã©cartelÃ© entre son histoire 
-            et son choix d'appartenir Ã  la sociÃ©tÃ© qui opprime son peuple que raconte Alexandra Lapierre. Fruit de trois annÃ©es d'enquÃªte, 
-            ce roman retrace les victoires et les dÃ©chirements d'une femme pleine de vie, aussi libre que dÃ©terminÃ©e, dont les stupÃ©fiantes 
-            audaces font Ã©cho aux combats d'aujourd'hui.
+            New York, dans les années 1900. Une jeune fille, que passionnent les livres rares, se joue du destin et gravit tous les échelons.
+            Elle devient la directrice de la fabuleuse bibliothèque du magnat J.P. Morgan et la coqueluche de l'aristocratie internationale,
+            sous le faux nom de Belle da Costa Greene. Belle Greene pour les intimes. En vérité, elle triche surtout. Car la flamboyante 
+            collectionneuse qui fait tourner les têtes et règne sur le monde des bibliophiles cache un terrible secret,dans une Amérique 
+            violemment raciste. Bienqu'elle paraisse blanche, elle est en réalité afro-américaine. Et, de surcroît, fille d'un célèbre 
+            activiste noir qui voit sa volonté de cacher ses origines comme une trahison. C'est ce drame d'un être écartelé entre son histoire 
+            et son choix d'appartenir à la société qui opprime son peuple que raconte Alexandra Lapierre. Fruit de trois années d'enquête, 
+            ce roman retrace les victoires et les déchirements d'une femme pleine de vie, aussi libre que déterminée, dont les stupéfiantes 
+            audaces font écho aux combats d'aujourd'hui.
         </p>
     </div>
 </div>
