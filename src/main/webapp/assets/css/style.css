@@ -50,7 +50,7 @@ header {
     justify-content: flex-end;
 }
 
-.menu a:hover {
+.menu a:active {
     border-bottom: 4px solid var(--light_brown);
 }
 
@@ -111,10 +111,16 @@ header {
 	z-index: 999;
 	background-color: rgba(0,0,0,0.4);
 	text-align: center;
-	/*visibility: hidden;
-	opacity: 0; */
-	/* pointer-events: none; */
+	visibility: hidden;
+	opacity: 0; 
+	pointer-events: none; 
 	transition: all 300ms; 
+}
+
+.container div.modal:target {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .container div.modal > div {
@@ -158,7 +164,8 @@ header {
 
 /* [MODAL SEARCH] */
 
-#modal-search .search-list {
+#modal-search .search-list a {
+	text-decoration: none;
     display: flex;
     margin: 20px 50px;
     color: var(--brown);
@@ -223,10 +230,6 @@ header {
 
 #modal-sign-up p{
     margin-bottom: 35px;
-}
-
-#modal-search, #modal-sign-in, #modal-sign-up {
-    display: none;
 }
 
 /* [ PAGE UN SEUL LIVRE */

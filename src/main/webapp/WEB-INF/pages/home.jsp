@@ -41,16 +41,19 @@
             <input type="text" />
         </form>
         <div class="search-list">
-            <img src="${ pageContext.request.contextPath }/assets/img/Fables-Livres-VII-a-XI-oeuvre-au-programme.jpg">
-            <div>
-                <p class="search-title">
-                    Fables de La Fontaine, Livres VII à XI (Bac 2021)
-                </p>
-                <p class="search-editor">Hatier</p>
-                <p class="search-date">28/08/2019</p>
-            </div>
+          	<a href="${ pageContext.request.contextPath }/one_book">
+          		<img src="${ pageContext.request.contextPath }/assets/img/Fables-Livres-VII-a-XI-oeuvre-au-programme.jpg">
+            	<div>
+	                <p class="search-title">
+	                    Fables de La Fontaine, Livres VII à XI (Bac 2021)
+	                </p>
+	                <p class="search-editor">Hatier</p>
+	                <p class="search-date">28/08/2019</p>
+            	</div>
+          	</a>            
         </div>
         <div class="search-list">
+        <a href="${ pageContext.request.contextPath }/one_book">
             <img src="${ pageContext.request.contextPath }/assets/img/Fables.jpg">
             <div>
                 <p class="search-title">
@@ -59,8 +62,10 @@
                 <p class="search-editor">Gallimard</p>
                 <p class="search-date">15/04/2021</p>
             </div>
+            </a>
         </div>
         <div class="search-list">
+        <a href="${ pageContext.request.contextPath }/one_book">
             <img src="${ pageContext.request.contextPath }/assets/img/A-la-claire-fontaine.jpg">
             <div>
                 <p class="search-title">
@@ -69,8 +74,10 @@
                 <p class="search-editor">Belin Education</p>
                 <p class="search-date">15/06/2020</p>
             </div>
+            </a>
         </div>
         <div class="search-list">
+        <a href="${ pageContext.request.contextPath }/one_book">
             <img src="${ pageContext.request.contextPath }/assets/img/Fables-Livres-VII-a-XI-oeuvre-au-programme.jpg">
             <div>
                 <p class="search-title">
@@ -79,8 +86,10 @@
                 <p class="search-editor">Nathan</p>
                 <p class="search-date">02/01/2020</p>
             </div>
+            </a>
         </div>
         <div class="search-list">
+        <a href="${ pageContext.request.contextPath }/one_book">
             <img src="${ pageContext.request.contextPath }/assets/img/A-la-claire-fontaine.jpg">
             <div>
                 <p class="search-title">
@@ -89,8 +98,10 @@
                 <p class="search-editor">Albin Michel</p>
                 <p class="search-date">28/08/2019</p>
             </div>
+            </a>
         </div>
         <div class="search-list">
+        <a href="${ pageContext.request.contextPath }/one_book">
             <img src="${ pageContext.request.contextPath }/assets/img/Fables-Livres-VII-a-XI-oeuvre-au-programme.jpg">
             <div>
                 <p class="search-title">
@@ -99,6 +110,7 @@
                 <p class="search-editor">Hatier</p>
                 <p class="search-date">28/08/2019</p>
             </div>
+            </a>
         </div>
     </div>
 </div>
