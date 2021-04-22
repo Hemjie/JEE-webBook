@@ -2,7 +2,7 @@
     <p class="title-one-book">Belle Greene</p>
     <div class="line-one-book"></div>
     <div class="details-one-book">                    
-        <img src="${ pageContext.request.contextPath }/assets/img/Belle-Greene.jpg">
+        <img src="${ oneBook.thumbnail }">
         <div class="infos-one-book">
             <div class="info">                        
                 <p class="info-title">Auteur</p>

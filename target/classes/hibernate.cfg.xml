@@ -22,9 +22,8 @@
         <property name="use_sql_comments">true</property>
 
         <!-- mapping class -->
-        <mapping class="com.formation.web_quiz.entities.BookEntity"/>
-        <mapping class="com.formation.web_quiz.entities.AuthorEntity"/>
-        <mapping class="com.formation.web_quiz.entities.IndustryEntity"/>
+        <mapping class="com.formation.webBooks.entities.BookEntity"/>
+        <mapping class="com.formation.webBooks.entities.IndustryEntity"/>
 
     </session-factory>
 

@@ -6,32 +6,14 @@
     <p class="title-recent">Recent books</p>
     <div class="line-recent"></div>
     <div class="list-recent">
-        <div class="book-recent">   
-        	<a href="${ pageContext.request.contextPath }/one_book">        		
-            	<img src="${ pageContext.request.contextPath }/assets/img/L-enfant-parfaite.jpg">
-        	</a>                 
-            <h2 class="title-book-recent">L'enfant parfaite</h2>
-        </div>
-        <div class="book-recent">                    
-            <img src="${ pageContext.request.contextPath }/assets/img/Belle-Greene.jpg">
-            <h2 class="title-book-recent">Belle Greene</h2>
-        </div>
-        <div class="book-recent">                    
-            <img src="${ pageContext.request.contextPath }/assets/img/Des-diables-et-des-saints.jpg">
-            <h2 class="title-book-recent">Des diables et des saints</h2>
-        </div>
-        <div class="book-recent">                    
-            <img src="${ pageContext.request.contextPath }/assets/img/Le-paeur.jpg">
-            <h2 class="title-book-recent">Le passeur</h2>
-        </div>
-        <div class="book-recent">                    
-            <img src="${ pageContext.request.contextPath }/assets/img/Les-Vilaines.jpg">
-            <h2 class="title-book-recent">Les vilaines</h2>
-        </div>
-        <div class="book-recent">                    
-            <img src="${ pageContext.request.contextPath }/assets/img/L-ami.jpg">
-            <h2 class="title-book-recent">L'ami</h2>
-        </div>
+    	<c:forEach items="${ recentBooks }" var="recentBook">
+	        <div class="book-recent">   
+	        	<a href="${ pageContext.request.contextPath }/one_book?id=${ recentBook.id }">        		
+	            	<img src="${ recentBook.thumbnail }">
+	        	</a>                 
+	            <h2 class="title-book-recent">${ recentBook.title }</h2>
+	        </div>
+        </c:forEach>
     </div>
 </div>
 

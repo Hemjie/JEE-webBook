@@ -20,7 +20,7 @@ public class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	private Session session = null;
-	private static List<BookEntity> books = null;
+	private static List<BookEntity> recentBooks = null;
 	
 	@Override
 	public void init() throws ServletException {
@@ -30,27 +30,41 @@ public class HomeServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		if(books == null) {
-			findMostRecent();
+		if(recentBooks == null) {
+			recentBooks = findMostRecent();
 		}
 		
+		request.setAttribute("recentBooks", recentBooks);
 		request.setAttribute("title", "Home");
 		request.setAttribute("page", "home");
 		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
+	}
+	
+	private List<BookEntity> findMostRecent() {
+		Query<BookEntity> q = session.createQuery("from BookEntity order by published_date desc", BookEntity.class);
+		q.setFirstResult(0);
+		q.setMaxResults(6);
+		
+		List<BookEntity> recentBooks = q.list();
+
+		recentBooks.forEach(System.out::println);
+		
+		return recentBooks;
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		doGet(request, response);
 	}
-	
-	private void findMostRecent() {
-		Query<BookEntity> q = session.createQuery("from BookEntity order by published_date desc limit 6", BookEntity.class);
-		
-		List<BookEntity> books = q.list();
 
-        books.forEach(System.out::println);
+	
+	@Override
+	public void destroy() {
+		session.close();
+		super.destroy();
 	}
+
 
 }

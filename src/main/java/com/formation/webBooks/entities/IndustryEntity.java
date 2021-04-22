@@ -23,8 +23,5 @@ public class IndustryEntity {
 	private Long id;
 	private String identifier;
 	private String type;
-	
-	@OneToOne
-	private String VolumeInfoId;
 
 }
