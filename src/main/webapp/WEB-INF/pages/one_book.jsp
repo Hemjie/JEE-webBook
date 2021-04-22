@@ -6,19 +6,65 @@
         <div class="infos-one-book">
             <div class="info">                        
                 <p class="info-title">Auteur</p>
-                <p class="info-name">Jean-Baptiste AndrÃ©a</p>
+                <p class="info-name">
+	                <c:forEach items="${ oneBook.authors }" var="author">
+	                	${ author }
+	                </c:forEach>
+                </p>
             </div>
             <div class="info">                        
-                <p class="info-title">Editeur</p>
-                <p class="info-name">Iconoclaste Eds De L'</p>
+                <p class="info-title">Langue</p>
+                <p class="info-name">
+                
+                	<c:if test="${ oneBook.language == 'fr' }">
+                		Français
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'en' }">
+                		Anglais
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'de' }">
+                		Allemand
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'es' }">
+                		Espagnol
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'it' }">
+                		Italien
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'hy' }">
+                		Arménien
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'la' }">
+                		Latin
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'nl' }">
+                		Néerlandais
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'pl' }">
+                		Polonais
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'sq' }">
+                		Albanais
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'sv' }">
+                		Suédois
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'tr' }">
+                		Turc
+                	</c:if>
+                	<c:if test="${ oneBook.language == 'un' }">
+                		Non déterminé
+                	</c:if>
+                	
+                </p>
             </div>
             <div class="info">                        
                 <p class="info-title">Date de parution</p>
-                <p class="info-name">14/01/2021</p>
+                <p class="info-name">${ oneBook.publishedDate }</p>
             </div>
             <div class="info">                        
-                <p class="info-title">Poids</p>
-                <p class="info-name">0,311 kg</p>
+                <p class="info-title">Type de ressources</p>
+                <p class="info-name"> ${ oneBook.printType }</p>
             </div>
             <div class="info">                        
                 <p class="info-title">EAN</p>
@@ -30,7 +76,7 @@
             </div>
             <div class="info">                        
                 <p class="info-title">Nombre de pages</p>
-                <p class="info-name">361</p>
+                <p class="info-name">${ oneBook.pageCount }</p>
             </div>
         </div>
         
