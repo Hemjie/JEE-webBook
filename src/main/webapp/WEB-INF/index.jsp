@@ -22,9 +22,9 @@
                 <div class="title">WebBooks</div>
             </div>
             <nav class="menu">
-                <a href="#">Home</a>
-                <a href="#">Contact</a>
-                <a href="#">Search</a>
+                <a href="${ pageContext.request.contextPath }/">Home</a>
+                <a href="${ pageContext.request.contextPath }/contact">Contact</a>
+                <a href="#modal-search">Search</a>
                 <a id="person" href="#"><img src="${ pageContext.request.contextPath }/assets/icon/person_black_48dp.svg"></a>
             </nav>
         </header>
