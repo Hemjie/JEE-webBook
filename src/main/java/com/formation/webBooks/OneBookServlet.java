@@ -32,8 +32,6 @@ public class OneBookServlet extends HttpServlet {
 
 		BookEntity oneBook = findById(idBook);
 		
-		request.getSession().setAttribute("user", "toto");
-		
 		request.setAttribute("oneBook", oneBook);
 		request.setAttribute("title", "One Book");
 		request.setAttribute("page", "one_book");

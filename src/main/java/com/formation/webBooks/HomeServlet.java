@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.hibernate.Session;
 import org.hibernate.query.Query;
@@ -66,6 +67,17 @@ public class HomeServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
+		String user = request.getParameter("user");
+		
+		if (user.trim().length() < 4) {
+			request.setAttribute("error", "Vérifie le champ texte. Il doit avoir au minimum 4 caractères");
+			doGet(request, response);
+			return;
+		} 
+		
+		HttpSession session = request.getSession();		
+		session.setAttribute("user", user);
 		doGet(request, response);
 	}
 

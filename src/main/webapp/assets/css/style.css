@@ -54,6 +54,10 @@ header {
     border-bottom: 4px solid var(--light_brown);
 }
 
+.menu a.active {
+	border-bottom: 4px solid var(--light_brown);
+}
+
 .img-back img {
     width: 100%;
     height: auto;

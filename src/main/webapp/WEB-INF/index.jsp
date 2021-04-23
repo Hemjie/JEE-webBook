@@ -24,8 +24,10 @@
                 </div>
             </div>
             <nav class="menu">
-                <a href="${ pageContext.request.contextPath }/">Home</a>
-                <a href="${ pageContext.request.contextPath }/contact">Contact</a>
+                <a href="${ pageContext.request.contextPath }/"
+                	class="${ page == 'home' ? 'active' : '' }">Home</a>
+                <a href="${ pageContext.request.contextPath }/contact"
+                	class="${ page == 'contact' ? 'active' : '' }">Contact</a>
                 <a href="#modal-search">Search</a>
                 <c:if test="${ user == null }">
                 	<a id="person" href="#modal-sign-up">

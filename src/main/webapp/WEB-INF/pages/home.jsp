@@ -110,7 +110,6 @@
         		Sign out		
         </p></a>        
         <a class="btn-sign" href="${ pageContext.request.contextPath }/">
-        	<c:set var="connect" value="1" />
         	Sign in
         </a>
     </div>
@@ -130,7 +129,6 @@
         </form>
         <a href="#modal-sign-in"><p>Sign in</p></a>
         <a class="btn-sign" href="${ pageContext.request.contextPath }/">
-        	<c:set var="connect" value="1" />
         	Sign up
         </a>
     </div>
