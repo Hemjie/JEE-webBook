@@ -105,8 +105,14 @@
             <label>Password</label>
             <input type="password" />
         </form>
-        <a href="${ pageContext.request.contextPath }/"><p>Sign out</p></a>
-        <a class="btn-sign" href="${ pageContext.request.contextPath }/">Sign in</a>
+        <a href="${ pageContext.request.contextPath }/"><p>
+        	<c:set var="connect" value="0" />
+        		Sign out		
+        </p></a>        
+        <a class="btn-sign" href="${ pageContext.request.contextPath }/">
+        	<c:set var="connect" value="1" />
+        	Sign in
+        </a>
     </div>
 </div>
 
@@ -123,6 +129,9 @@
             <input type="password" />
         </form>
         <a href="#modal-sign-in"><p>Sign in</p></a>
-        <a class="btn-sign" href="${ pageContext.request.contextPath }/">Sign up</a>
+        <a class="btn-sign" href="${ pageContext.request.contextPath }/">
+        	<c:set var="connect" value="1" />
+        	Sign up
+        </a>
     </div>
 </div>

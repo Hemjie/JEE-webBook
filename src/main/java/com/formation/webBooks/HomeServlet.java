@@ -22,6 +22,8 @@ public class HomeServlet extends HttpServlet {
 	private Session session = null;
 	private static List<BookEntity> recentBooks = null;
 	
+	private String connect;
+	
 	@Override
 	public void init() throws ServletException {
 		super.init();
@@ -34,10 +36,18 @@ public class HomeServlet extends HttpServlet {
 			recentBooks = findMostRecent();
 		}
 		
+		
+		if(connect == null) {
+			connect = "0";
+		} else {
+			connect = request.getParameter("connect");
+		}
+		
 		request.setAttribute("recentBooks", recentBooks);
 		request.setAttribute("title", "Home");
 		request.setAttribute("page", "home");
-		
+		request.setAttribute("connect", connect);
+		System.out.println("connect : " + connect);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
 	}
 	

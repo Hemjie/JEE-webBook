@@ -27,7 +27,16 @@
                 <a href="${ pageContext.request.contextPath }/">Home</a>
                 <a href="${ pageContext.request.contextPath }/contact">Contact</a>
                 <a href="#modal-search">Search</a>
-                <a id="person" href="#modal-sign-up"><img src="${ pageContext.request.contextPath }/assets/icon/person_black_48dp.svg"></a>
+                <c:if test="${ user == null }">
+                	<a id="person" href="#modal-sign-up">
+                		<img src="${ pageContext.request.contextPath }/assets/icon/person_black_48dp.svg">
+                	</a>
+                </c:if>
+                <c:if test="${ user != null }">
+                	<a id="connect" href="#modal-user">
+                		<img src="${ pageContext.request.contextPath }/assets/icon/cable_black_48dp.svg">
+                	</a>
+                </c:if>
             </nav>
         </header>
         

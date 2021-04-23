@@ -1,11 +1,14 @@
 package com.formation.webBooks.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
@@ -26,34 +29,11 @@ public class BookEntity {
 
 	@Id
 	private String id;
-	
-	@Column(name="allow_anon_logging")
-	private Boolean allowAnonLogging;
-	
-	@Column(name="canonical_volume_link")
-	private String canonicalVolumeLink;
-	
-	@Column(name="content_version")
-	private String contentVersion;
-	
-	private String etag;
-	
-	@Column(name="info_link")
-	private String infoLink;
-	private String kind;
+	private String description;
 	private String language;
-	
-	@Column(name="maturity_rating")
-	private String maturityRating;
 	
 	@Column(name="page_count")
 	private Long pageCount;
-	
-	@Column(name="preview_link")
-	private String previewLink;
-	
-	@Column(name="print_type")
-	private String printType;
 	
 	@Column(name="published_date")
 	private String publishedDate;
@@ -67,8 +47,11 @@ public class BookEntity {
 	private String thumbnail;
 	private String title;
 	
-	@ElementCollection
-	private List<String> authors;
+	 @ElementCollection
+	 @CollectionTable(name = "book_model_authors",
+	 joinColumns = @JoinColumn(name = "book_model_id"))
+	 @Column(name = "authors")
+	 private List<String> authors = new ArrayList<>();
 	
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="volume_info_id")

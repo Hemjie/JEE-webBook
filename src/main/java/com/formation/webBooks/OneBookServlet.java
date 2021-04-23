@@ -19,7 +19,6 @@ public class OneBookServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private Session session = null;
-	private static BookEntity oneBook = null;
 	
 	@Override
 	public void init() throws ServletException {
@@ -30,13 +29,10 @@ public class OneBookServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String idBook = request.getParameter("id");
+
+		BookEntity oneBook = findById(idBook);
 		
-		request.getSession().setAttribute("id", idBook);
-		
-		if(oneBook == null) {
-			oneBook = findById(idBook);
-		}
-		
+		request.getSession().setAttribute("user", "toto");
 		
 		request.setAttribute("oneBook", oneBook);
 		request.setAttribute("title", "One Book");
